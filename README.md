@@ -23,4 +23,10 @@ My eas.json looks like:
 
 When I run `eas build --profile staging --platform android` my `app.config.js` throws an error because the "ENVIRONMENT" is undefined.
 
+```
+Error: Error reading Expo config at /Users/Boris/Dev/ClickView/expo-eas-env-issue/app.config.js:
+
+Environment "undefined" is not supported. Set the environment variable named "ENVIRONMENT" and try again.
+```
+
 > I believe this has something to do with the customized `metro.config.js`
