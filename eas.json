@@ -1,15 +1,39 @@
 {
   "build": {
-    "release": {},
     "staging": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "ENVIRONMENT": "staging",
+        "DEBUG": "false"
+      }
+    },
+    "qa": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "ENVIRONMENT": "qa",
+        "DEBUG": "false"
+      }
+    },
+    "prod": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "ENVIRONMENT": "prod",
+        "DEBUG": "false"
+      }
+    },
+    "dev": {
       "developmentClient": true,
       "distribution": "internal",
       "env": {
-        "ENVIRONMENT": "staging"
+        "ENVIRONMENT": "staging",
+        "DEBUG": "true"
       }
     }
-  },
-  "submit": {
-    "release": {}
   }
 }
