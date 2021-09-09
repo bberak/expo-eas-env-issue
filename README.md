@@ -1,3 +1,10 @@
+# EAS env issue 
+
+## Summary
+
+`eas build` does not inject evironment variables when evaluation `app.config.js`
+
+## Steps to reproduce
 
 My eas.json looks like:
 
