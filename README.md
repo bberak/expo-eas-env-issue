@@ -22,3 +22,5 @@ My eas.json looks like:
 > Notice the "ENVIRONMENT" variables is set to "staging"
 
 When I run `eas build --profile staging --platform android` my `app.config.js` throws an error because the "ENVIRONMENT" is undefined.
+
+> I believe this has something to do with the customized `metro.config.js`
