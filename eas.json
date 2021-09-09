@@ -1,9 +1,12 @@
 {
   "build": {
     "release": {},
-    "development": {
+    "staging": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "ENVIRONMENT": "staging"
+      }
     }
   },
   "submit": {
